@@ -1,10 +1,10 @@
 //Prompt user amount of characters and put into constant.
-let maxChar = parseInt(prompt("What is the number of characters you want? (Must be between 8-20.)"));
+let maxChar = parseInt(prompt("What is the number of characters you want? (Must be between 8-128.)"));
 
 //Sets minimum and maximun number of characters and requires a value to be entered.
-while (maxChar<8||maxChar>20||!maxChar){
-  alert("Please type in a number between 8-20");
-  maxChar = parseInt(prompt("What is the number of characters you want? (Must be between 8-20.)"));
+while (maxChar<8||maxChar>128||!maxChar){
+  alert("Please type in a number between 8-128");
+  maxChar = parseInt(prompt("What is the number of characters you want? (Must be between 8-128.)"));
 }
 
 //Prompt user for if they want capital letters.
